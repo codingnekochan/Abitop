@@ -2,7 +2,7 @@ import React from "react";
 import KumarText from "../components/Text/KumarText";
 import MaturaText from "../components/Text/MaturaText";
 import SatoshiText from "../components/Text/SatoshiText";
-import Button from "../components/Buttons/Button";
+import Button from "../components/Buttons/NavButton";
 
 function TestComponent() {
 	return (
