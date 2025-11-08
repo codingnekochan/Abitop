@@ -4,6 +4,7 @@
 	--font-Matura: "Matura MT Script Capitals", cursive;
 	--font-Satoshi: "Satoshi", sans-serif;
 	--font-Kumar: "Kumar One", cursive;
+	--font-Inter: "Inter", sans-serif;
 	/* COLORS */
 	--color-brand100: oklch(0.14 0.0515 265.17);
 	--color-brand00: oklch(0.14 0.0515 265.17 / 0%);
