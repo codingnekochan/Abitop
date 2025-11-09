@@ -8,19 +8,29 @@ function FooterSection() {
   return (
     <footer
       id="contact"
-      className="relative lg:pt-[104px] lg:pb-10 pl-20 pr-[120px] bg-brand100 "
+      className="relative pt-10 lg:pt-[104px] pb-6 lg:pb-10 pl-6 lg:pl-20 lg:pr-[120px] bg-brand100 "
     >
-      <div className="z-50 flex lg:flex-row justify-between items-center">
+      <div className="z-50 flex flex-row justify-between items-center">
         <div className="lg:w-[45%]">
           <SectionTitlePill title={contactCopy.title} />
-          <div className=" mt-10 flex flex-col md:flex-wrap lg:gap-y-12 lg:h-[246px] lg:gap-x-[200px] justify-between">
+          <div className="max-md:pr-[68px] mt-10 flex flex-col flex-wrap gap-y-10 lg:gap-y-12 h-[218px] lg:h-[246px] gap-x-[70px] lg:gap-x-25 xl:gap-x-[200px] justify-between">
             {contactCopy.contact_links.map((link, index) => (
-              <div key={index}>
-                <SatoshiText color={"text-accent"} textSize={"text-xl"}>
+              <div
+                key={index}
+                className="max-md:max-w-[118px]"
+              >
+                <SatoshiText
+                  color={"text-accent"}
+                  textSize={"text-base lg:text-xl"}
+                >
                   {link.type}
                 </SatoshiText>
                 <a href={link.link} target="_blank" rel="noopener noreferrer">
-                  <SatoshiText color={"text-gray"} textSize={"text-sm"} italic>
+                  <SatoshiText
+                    color={"text-gray"}
+                    textSize={"text-xs lg:text-sm"}
+                    italic
+                  >
                     {link.value}
                   </SatoshiText>
                 </a>
@@ -28,13 +38,13 @@ function FooterSection() {
             ))}
           </div>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <KumarText color={"text-white"} textSize={"text-7xl"}>
             Abitop
           </KumarText>
         </div>
       </div>
-      <div className="lg:mt-[200px] z-50">
+      <div className="mt-25 lg:mt-[200px] z-50">
         <SatoshiText
           color={"text-accent"}
           fontWeight={"font-medium"}

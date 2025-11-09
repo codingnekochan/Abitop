@@ -1,19 +1,21 @@
 @import "tailwindcss";
 @theme {
-	/* FONT FAMILIES */
-	--font-Matura: "Matura MT Script Capitals", cursive;
-	--font-Satoshi: "Satoshi", sans-serif;
-	--font-Kumar: "Kumar One", cursive;
-	--font-Inter: "Inter", sans-serif;
-	/* COLORS */
-	--color-brand100: oklch(0.14 0.0515 265.17);
-	--color-brand00: oklch(0.14 0.0515 265.17 / 0%);
-	--color-accent: oklch(0.9151 0.0108 286.18);
-	--color-white100: oklch(1 0 0);
-	--color-white90: oklch(1 0 0 / 90%);
-	--color-white10: oklch(1 0 0 / 10%);
-	--color-white60: oklch(1 0 0 / 60%);
-	--color-white20: oklch(1 0 0 / 20%);
-	--color-gray: oklch(0.8141 0 0);
-	--color-transparent: oklch(1 0 0 / 0%);
+  /* FONT FAMILIES */
+  --font-Matura: "Matura MT Script Capitals", cursive;
+  --font-Satoshi: "Satoshi", sans-serif;
+  --font-Kumar: "Kumar One", cursive;
+  --font-Inter: "Inter", sans-serif;
+  /* COLORS */
+  --color-brand100: oklch(0.14 0.0515 265.17);
+  --color-brand00: oklch(0.14 0.0515 265.17 / 0%);
+  --color-accent: oklch(0.9151 0.0108 286.18);
+  --color-accent15: oklch(0.9151 0.0108 286.18 / 15%);
+  --color-white100: oklch(1 0 0);
+  --color-white90: oklch(1 0 0 / 90%);
+  --color-white10: oklch(1 0 0 / 10%);
+  --color-white60: oklch(1 0 0 / 60%);
+  --color-white35: oklch(1 0 0 / 35%);
+  --color-white20: oklch(1 0 0 / 20%);
+  --color-gray: oklch(0.8141 0 0);
+  --color-transparent: oklch(1 0 0 / 0%);
 }

@@ -3,7 +3,7 @@ import MaturaText from "./Text/MaturaText";
 
 function SectionTitlePill({ title, isUnderlined = true }) {
   return (
-    <div className="py-2 px-6 rounded-[30px] bg-white10 justify-self-start">
+    <div className="py-2 px-6 rounded-[30px] bg-white10 w-fit">
       <h2>
         <MaturaText
           underline={isUnderlined}

@@ -17,10 +17,10 @@ import {
 } from "./images";
 
 export const heroSectionCopy = [
-  { title: "Primrose Apartment", year: "2025", image: heroImageOne },
-  { title: "Sunset Villa", year: "2025", image: heroImageTwo },
-  { title: "Oceanview Condo", year: "2025", image: heroImageThree },
-  { title: "Mountain Retreat", year: "2025", image: heroImageFour },
+  { id: "01", title: "Primrose Apartment", year: "2025", image: heroImageOne },
+  { id: "02", title: "Sunset Villa", year: "2025", image: heroImageTwo },
+  { id: "03", title: "Oceanview Condo", year: "2025", image: heroImageThree },
+  { id: "04", title: "Mountain Retreat", year: "2025", image: heroImageFour },
 ];
 export const aboutSectionCopy = {
   title: "At Abitop",

@@ -1,9 +1,18 @@
 import React from "react";
 
-function SatoshiText({ children, textSize, fontWeight, color, italic, textAlign }) {
+function SatoshiText({
+  children,
+  textSize,
+  fontWeight,
+  color,
+  italic,
+  textAlign,
+  textDisplay,
+  textTransform,
+}) {
   return (
     <p
-      className={`whitespace-pre-wrap font-Satoshi leading-none ${textAlign} ${fontWeight} ${textSize} ${color} ${
+      className={` whitespace-pre-wrap font-Satoshi leading-none ${textTransform} ${textDisplay} ${textAlign} ${fontWeight} ${textSize} ${color} ${
         italic ? "italic" : ""
       }`}
     >
