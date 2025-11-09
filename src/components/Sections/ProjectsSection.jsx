@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SectionTitlePill from "../sectionTitlePill";
+import SectionTitlePill from "../SectionTitlePill";
 import { projectsCopy } from "../../constants/copy";
 
 function ProjectsSection() {

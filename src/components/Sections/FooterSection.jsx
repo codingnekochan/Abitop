@@ -1,6 +1,6 @@
 import React from "react";
 import KumarText from "../Text/KumarText";
-import SectionTitlePill from "../sectionTitlePill";
+import SectionTitlePill from "../SectionTitlePill";
 import { contactCopy } from "../../constants/copy";
 import SatoshiText from "../Text/SatoshiText";
 
@@ -15,10 +15,7 @@ function FooterSection() {
           <SectionTitlePill title={contactCopy.title} />
           <div className="max-md:pr-[68px] mt-10 flex flex-col flex-wrap gap-y-10 lg:gap-y-12 h-[218px] lg:h-[246px] gap-x-[70px] lg:gap-x-25 xl:gap-x-[200px] justify-between">
             {contactCopy.contact_links.map((link, index) => (
-              <div
-                key={index}
-                className="max-md:max-w-[118px]"
-              >
+              <div key={index} className="max-md:max-w-[118px]">
                 <SatoshiText
                   color={"text-accent"}
                   textSize={"text-base lg:text-xl"}

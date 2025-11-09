@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitlePill from "../sectionTitlePill";
+import SectionTitlePill from "../SectionTitlePill";
 import SatoshiText from "../Text/SatoshiText";
 import { aboutSectionCopy, whoWeAreCopy } from "../../constants/copy";
 import NavButton from "../Buttons/NavButton";

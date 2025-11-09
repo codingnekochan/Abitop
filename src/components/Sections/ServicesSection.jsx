@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitlePill from "../sectionTitlePill";
+import SectionTitlePill from "../SectionTitlePill";
 import { servicesCopy } from "../../constants/copy";
 
 function ServicesSection() {
