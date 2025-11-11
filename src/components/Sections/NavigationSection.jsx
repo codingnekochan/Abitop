@@ -67,7 +67,7 @@ function NavigationSection() {
           </button>
         </div>
         <div
-          className={`bg-brand100 absolute top-0 left-0 right-0 ${isMenuOpen ? "block" : "hidden"}`}
+          className={`bg-brand100 z-50 absolute top-0 left-0 right-0 ${isMenuOpen ? "block" : "hidden"}`}
         >
           <div className="flex justify-between px-8 py-6">
             <div />
@@ -76,7 +76,7 @@ function NavigationSection() {
             </button>
           </div>
           <Divider />
-          <ul className="mb-16">
+          <ul className="mb-16 z-50">
             {navigationLinks.map((link) => (
               <li key={link.key} className="border-b border-accent15 py-4">
                 <a onClick={handleCloseMenu} href={link.href} className="active:opacity-70">

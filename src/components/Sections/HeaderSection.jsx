@@ -41,7 +41,7 @@ function HeaderSection() {
       className="relative bg-brand100 overflow-hidden  lg:border-b border-white20"
     >
       {/* Navigation */}
-      <div className="absolute top-0 left-0 right-0 z-10">
+      <div className="absolute top-0 left-0 right-0 z-50">
         <NavigationSection />
       </div>
 
@@ -76,7 +76,7 @@ function HeaderSection() {
             </picture>
           </motion.div>
         </AnimatePresence>
-        <div className="absolute bottom-0 left-0 right-0 pt-20 pb-30 max-lg:bg-linear-to-t  from-brand100 from-15% to-brand00 lg:pt-0 lg:pb-0 lg:relative z-50 pl-10 lg:pl-20 xl:pl-[112px]">
+        <div className="absolute bottom-0 left-0 right-0 pt-20 pb-30 max-lg:bg-linear-to-t  from-brand100 from-15% to-brand00 lg:pt-0 lg:pb-0 lg:relative z-20 pl-10 lg:pl-20 xl:pl-[112px]">
           <div className="max-w-[206px] md:max-w-[400px] al">
             <SatoshiText
               textSize={"text-[40px] md:text-[60px] xl:text-[80px]"}
@@ -88,7 +88,7 @@ function HeaderSection() {
             </SatoshiText>
           </div>
         </div>
-        <div className=" absolute top-[30%] right-0 z-50 lg:hidden">
+        <div className=" absolute top-[30%] right-0 z-20 lg:hidden">
           {heroSectionCopy.map((copy, i) => (
             <div
               key={copy.id}
