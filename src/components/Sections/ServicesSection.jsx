@@ -9,11 +9,11 @@ function ServicesSection() {
       className="pt-20 pb-0 lg:py-[104px] px-6  lg:px-20 bg-brand100"
     >
       <SectionTitlePill title={servicesCopy.title} />
-      <div className="mt-10 flex flex-row justify-center items-center w-full overflow-scroll scrollbar-hide snap-x snap-mandatory">
+      <div className="mt-10 flex flex-row justify-center items-center w-full max-lg:overflow-x-scroll scrollbar-hide snap-x snap-mandatory">
         {servicesCopy.service_list.map((service, index) => (
           <div
             key={index}
-            className="lg:mb-10 max-md:flex-none relative max-md:w-[100%] hover:w-[100%] min-h-[360px] lg:h-[432px] hover:transition-all ease-in snap-center"
+            className="lg:mb-10 max-md:flex-none relative max-lg:w-[100%] hover:w-[100%] min-h-[360px] lg:h-[432px] hover:transition-all ease-in snap-center"
           >
             <div className="absolute left-6 bottom-14 z-10">
               <p className="text-white font-Inter font-semibold lg:text-[24px] mb-2 whitespace-pre-wrap">
