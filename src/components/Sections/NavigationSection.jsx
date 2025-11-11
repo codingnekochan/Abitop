@@ -63,7 +63,7 @@ function NavigationSection() {
             Abitop
           </KumarText>
           <button onClick={handleOpenMenu}>
-            <img aria-hidden={true} src="./src/assets/menu.svg" />
+            <img aria-hidden={true} src="/src/assets/menu.svg" />
           </button>
         </div>
         <div
@@ -72,14 +72,18 @@ function NavigationSection() {
           <div className="flex justify-between px-8 py-6">
             <div />
             <button onClick={handleCloseMenu} className="">
-              <img aria-hidden={true} src="./src/assets/cancel.svg" />
+              <img aria-hidden={true} src="/src/assets/cancel.svg" />
             </button>
           </div>
           <Divider />
           <ul className="mb-16 z-50">
             {navigationLinks.map((link) => (
               <li key={link.key} className="border-b border-accent15 py-4">
-                <a onClick={handleCloseMenu} href={link.href} className="active:opacity-70">
+                <a
+                  onClick={handleCloseMenu}
+                  href={link.href}
+                  className="active:opacity-70"
+                >
                   <SatoshiText
                     fontWeight={"font-medium"}
                     textSize={"text-base"}
