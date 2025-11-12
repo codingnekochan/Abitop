@@ -22,15 +22,21 @@ function FooterSection() {
                 >
                   {link.type}
                 </SatoshiText>
-                <a href={link.link} target="_blank" rel="noopener noreferrer">
-                  <SatoshiText
-                    color={"text-gray"}
-                    textSize={"text-xs lg:text-sm"}
-                    italic
+                <div className="mt-1">
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {link.value}
-                  </SatoshiText>
-                </a>
+                    <SatoshiText
+                      color={"text-gray"}
+                      textSize={"text-xs lg:text-sm"}
+                      italic
+                    >
+                      {link.value}
+                    </SatoshiText>
+                  </a>
+                </div>
               </div>
             ))}
           </div>

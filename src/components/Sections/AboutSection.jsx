@@ -31,7 +31,7 @@ function AboutSection() {
           <div className="mb-10  max-lg:self-center items-center lg:mb-4">
             <SectionTitlePill title="About Us" />
           </div>
-          <p className="max-lg:text-center">
+          <p className="max-lg:text-center max-lg:text-accent">
             <SatoshiText
               textDisplay={"max-lg:inline lg:mb-6"}
               color={"text-white90"}
@@ -46,7 +46,7 @@ function AboutSection() {
               textDisplay={"max-lg:inline"}
               color={"text-accent"}
               fontWeight={"font-regular"}
-              textSize={"text-base lg:text-[22px]"}
+              textSize={"text-base lg:text-[22px] lg:leading-[30px]"}
               textAlign={"max-lg:text-center"}
               textTransform={"max-md:lowercase"}
             >
@@ -55,7 +55,7 @@ function AboutSection() {
           </p>
           <div
             aria-hidden={screen.width < 1024 ? true : false}
-            className="hidden lg:block"
+            className="hidden lg:flex flex-row justify-start"
           >
             <NavButton
               text={"View portfolio"}
@@ -65,7 +65,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
-      <Divider marginClass={'mx-6 lg:mx-20'}/>
+      <Divider marginClass={"mx-6 lg:mx-20"} />
       <div className="bg-white20 h-[1px] mx-6 lg:mx-20" />
       <div className="flex flex-col-reverse lg:flex-row-reverse gap-10 lg:gap-20 max-lg:px-6  pt-10 lg:py-[104px] lg:pl-20">
         <img
