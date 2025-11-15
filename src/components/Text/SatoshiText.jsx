@@ -12,7 +12,7 @@ function SatoshiText({
 }) {
   return (
     <p
-      className={` whitespace-pre-wrap font-Satoshi leading-none ${textTransform} ${textDisplay} ${textAlign} ${fontWeight} ${textSize} ${color} ${
+      className={` whitespace-pre-wrap font-Satoshi  leading-none ${textTransform} ${textDisplay} ${textAlign ?? 'text-left'} ${fontWeight ?? "font-normal"} ${textSize} ${color} ${
         italic ? "italic" : ""
       }`}
     >
