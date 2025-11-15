@@ -63,7 +63,7 @@ function NavigationSection() {
             Abitop
           </KumarText>
           <button onClick={handleOpenMenu}>
-            <img aria-hidden={true} src="/src/assets/menu.svg" />
+            <img aria-hidden={true} src="public/assets/menu.svg" />
           </button>
         </div>
         <div
@@ -72,7 +72,7 @@ function NavigationSection() {
           <div className="flex justify-between px-8 py-6">
             <div />
             <button onClick={handleCloseMenu} className="">
-              <img aria-hidden={true} src="/src/assets/cancel.svg" />
+              <img aria-hidden={true} src="public/assets/cancel.svg" />
             </button>
           </div>
           <Divider />
