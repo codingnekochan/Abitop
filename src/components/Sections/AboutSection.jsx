@@ -22,7 +22,7 @@ function AboutSection() {
         <img
           src={aboutSectionCopy.image}
           alt="Decorative"
-          className="lg:w-[51.5%] h-auto"
+          className="lg:w-[51.5%] h-[390px] lg:h-auto max-lg:rounded-[10px] rounded-r-[10px] object-cover"
         />
         <div className="flex flex-col lg:gap-6 justify-center items-start">
           <div className="mb-10  max-lg:self-center items-center lg:mb-4">
@@ -68,7 +68,7 @@ function AboutSection() {
         <img
           src={whoWeAreCopy.image}
           alt="Decorative"
-          className="lg:w-[51.5%] h-auto"
+          className="lg:w-[51.5%] h-[390px] lg:h-auto max-lg:rounded-[10px] rounded-l-[10px]  object-cover"
         />
         <div className="flex flex-col gap-8 lg:gap-4 justify-center lg:items-start">
           <h3>

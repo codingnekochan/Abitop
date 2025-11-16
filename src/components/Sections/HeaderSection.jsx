@@ -88,11 +88,11 @@ function HeaderSection() {
             </SatoshiText>
           </div>
         </div>
-        <div className=" absolute top-[30%] right-0 z-20 lg:hidden">
+        <div className=" absolute top-[30%] right-0 z-20 lg:hidden ">
           {heroSectionCopy.map((copy, i) => (
             <div
               key={copy.id}
-              className="flex flex-row gap-2 items-center mb-2"
+              className="flex flex-row gap-2 items-center mb-2 justify-end "
             >
               <SatoshiText
                 color={i === page ? "text-white100" : "text-white35"}
@@ -103,7 +103,7 @@ function HeaderSection() {
                 {copy.id}
               </SatoshiText>
               <div
-                className={`h-0.5 w-9 transition-all duration-300 ${
+                className={`h-0.5 w-9 transition-all rounded-full duration-300 ${
                   i === page ? "bg-white" : "bg-transparent"
                 }`}
               />

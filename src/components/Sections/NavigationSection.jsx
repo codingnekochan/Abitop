@@ -27,7 +27,7 @@ function NavigationSection() {
         </KumarText>
         <ul className="flex gap-10 items-center">
           {desktopLinks.map((link) => (
-            <li key={link.key} className="relative">
+            <li key={link.key} className="relative px-1">
               <div className="mb-10">
                 <a onClick={() => setFocus(link.key)} href={link.href}>
                   <SatoshiText
@@ -40,7 +40,7 @@ function NavigationSection() {
                 </a>
               </div>
               <div
-                className={`absolute -bottom-1 h-1 bg-white rounded-full transition-all duration-300 ease-in-out ${
+                className={`absolute left-0 right-0 -bottom-0.5 h-0.5 bg-white rounded-full transition-all duration-300 ease-in-out ${
                   focus === link.key ? "w-full" : "w-0"
                 }`}
               />
