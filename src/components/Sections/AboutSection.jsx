@@ -82,7 +82,7 @@ function AboutSection() {
               color={"text-white90"}
               fontWeight={"font-bold"}
               textSize={"text-lg lg:text-[32px]"}
-              textAlign={"max-lg:text-center"}
+              textAlign={"max-lg:text-center capitalize"}
             >
               {whoWeAreCopy.title}
             </SatoshiText>
