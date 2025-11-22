@@ -49,7 +49,7 @@ function ProjectsSection() {
       </div>
       <div
         ref={scrollRef}
-        className="mt-10 flex lg:flex-row  items-center w-full overflow-x-scroll scrollbar-hide snap-x snap-mandatory"
+        className="no-scrollbar mt-10 flex lg:flex-row  items-center w-full overflow-x-scroll scrollbar-hide snap-x snap-mandatory"
       >
         {projectsCopy.projects_list.map((project, index) => {
           return (

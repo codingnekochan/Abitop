@@ -12,7 +12,7 @@ function ServicesSection() {
       className="pt-20 pb-0 lg:py-[104px] px-6  lg:px-20 bg-brand100"
     >
       <SectionTitlePill title={servicesCopy.title} />
-      <div className="mt-10 flex flex-row justify-start items-center w-full  max-lg:overflow-x-scroll scrollbar-hide snap-x snap-mandatory">
+      <div className="no-scrollbar mt-10 flex flex-row justify-start items-center w-full  max-lg:overflow-x-scroll scrollbar-hide snap-x snap-mandatory">
         {servicesCopy.service_list.map((service, index) => (
           <motion.div
             className="lg:mb-10 max-lg:flex-none relative snap-center"
