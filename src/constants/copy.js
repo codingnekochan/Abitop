@@ -25,7 +25,7 @@ export const heroSectionCopy = [
 export const aboutSectionCopy = {
   title: "At Abitop",
   description:
-    "We specialize in transforming visionary concepts into extraordinary architectural realities.\nWith over 8 years of experience across diverse projects, ranging from luxurious residential developments to commercial hubs and public spaces, we bring a blend of creativity, functionality, and sustainability to every design.",
+    "we specialize in transforming visionary concepts into extraordinary architectural realities.\nWith over 8 years of experience across diverse projects, ranging from luxurious residential developments to commercial hubs and public spaces, we bring a blend of creativity, functionality, and sustainability to every design.",
   image: aboutImageOne,
 };
 export const whoWeAreCopy = {

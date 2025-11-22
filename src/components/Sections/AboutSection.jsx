@@ -25,31 +25,37 @@ function AboutSection() {
           className="lg:w-[51.5%] h-[390px] lg:h-auto max-lg:rounded-[10px] rounded-r-[10px] object-cover"
         />
         <div className="flex flex-col lg:gap-6 justify-center items-start">
-          <div className="mb-10  max-lg:self-center items-center lg:mb-4">
+          <div className="mb-10 max-lg:self-center items-center lg:mb-4">
             <SectionTitlePill title="About Us" />
           </div>
-          <p className="max-lg:text-center max-lg:text-accent max-lg:font-normal">
-            <SatoshiText
-              textDisplay={"max-lg:inline lg:mb-6"}
-              color={"text-white90"}
-              fontWeight={"lg:font-bold"}
-              textSize={"text-lg lg:text-[32px]"}
-              textAlign={"max-lg:text-center"}
-            >
-              {aboutSectionCopy.title}
-              {", "}
-            </SatoshiText>
-            <SatoshiText
-              textDisplay={"max-lg:inline"}
-              color={"text-accent"}
-              fontWeight={"font-normal"}
-              textSize={"text-base lg:text-[18px] lg:leading-[30px]"}
-              textAlign={"max-lg:text-center"}
-              textTransform={"max-md:lowercase"}
-            >
-              {aboutSectionCopy.description}
-            </SatoshiText>
-          </p>
+          <SatoshiText
+            textDisplay={"max-lg:hidden"}
+            color={"text-white90"}
+            fontWeight={"font-bold"}
+            textSize={"text-[32px]"}
+          >
+            {aboutSectionCopy.title}
+            {", "}
+          </SatoshiText>
+          <SatoshiText
+            textDisplay={"max-lg:hidden"}
+            color={"text-accent"}
+            fontWeight={"font-normal"}
+            textSize={"text-lg"}
+            textTransform={"normal-case"}
+          >
+            {aboutSectionCopy.description}
+          </SatoshiText>
+          <SatoshiText
+            textAlign={"lg:hidden text-center"}
+            color={"text-accent"}
+            fontWeight={"font-normal"}
+            textSize={"text-base"}
+          >
+            {aboutSectionCopy.title}
+            {", "}
+            {aboutSectionCopy.description}
+          </SatoshiText>
           <div
             aria-hidden={screen.width < 1024 ? true : false}
             className="hidden lg:flex flex-row justify-start"

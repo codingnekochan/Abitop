@@ -7,6 +7,7 @@
   --font-Inter: "Inter", sans-serif;
   /* COLORS */
   --color-brand100: oklch(0.14 0.0515 265.17);
+  --color-brand25: oklch(0.14 0.0515 265.17 / 25%);
   --color-brand00: oklch(0.14 0.0515 265.17 / 0%);
   --color-accent: oklch(0.9151 0.0108 286.18);
   --color-accent15: oklch(0.9151 0.0108 286.18 / 15%);
@@ -15,6 +16,7 @@
   --color-white10: oklch(1 0 0 / 10%);
   --color-white60: oklch(1 0 0 / 60%);
   --color-white35: oklch(1 0 0 / 35%);
+  --color-white30: oklch(1 0 0 / 30%);
   --color-white20: oklch(1 0 0 / 20%);
   --color-gray: oklch(0.8141 0 0);
   --color-transparent: oklch(1 0 0 / 0%);
