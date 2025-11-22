@@ -2,14 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { s } from "motion/react-client";
 
-function ChevronButton({
-  direction = "left",
-  onClick,
-  active = false,
-  size = 24,
-}) {
+function ChevronButton({ direction = "left", onClick, active, size = 24 }) {
+  console.log("ChevronButton active:", active);
   return (
     <button
+      disabled={!active}
       onClick={onClick}
       className={` border-[2px] px-3 py-2 border-brand25 ${
         active ? "bg-white30" : "bg-white10"

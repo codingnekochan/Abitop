@@ -2,11 +2,11 @@ import React, { useRef, useState } from "react";
 import SectionTitlePill from "../SectionTitlePill";
 import { projectsCopy } from "../../constants/copy";
 import ChevronButton from "../Buttons/ChevronButton";
+import { motion } from "motion/react";
 
 function ProjectsSection() {
   const [projectIndex, setProjectIndex] = useState(0);
   const scrollRef = useRef(null);
-  console.log("projectIndex:", projectIndex);
   const handlePrevClick = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
@@ -14,8 +14,8 @@ function ProjectsSection() {
         behavior: "smooth",
       });
     }
-    if (projectIndex === 0) return;
-    setProjectIndex((prevIndex) => prevIndex - 1);
+    // if (projectIndex === 0) return;
+    // setProjectIndex((prevIndex) => prevIndex - 1);
   };
 
   const handleNextClick = () => {
@@ -25,9 +25,10 @@ function ProjectsSection() {
         behavior: "smooth",
       });
     }
-    if (projectIndex === projectsCopy.projects_list.length - 1) return;
-    setProjectIndex((prevIndex) => prevIndex + 1);
+    // if (projectIndex === projectsCopy.projects_list.length - 1) return;
+    // setProjectIndex((prevIndex) => prevIndex + 1);
   };
+  console.log("projectIndex:", projectIndex);
   console.log("width:", window.innerWidth);
 
   return (
@@ -49,11 +50,18 @@ function ProjectsSection() {
       </div>
       <div
         ref={scrollRef}
-        className="no-scrollbar mt-10 flex lg:flex-row  items-center w-full overflow-x-scroll scrollbar-hide snap-x snap-mandatory"
+        className="no-scrollbar mt-10 flex lg:flex-row gap-5  items-center w-full overflow-x-scroll scrollbar-hide snap-x snap-mandatory"
       >
         {projectsCopy.projects_list.map((project, index) => {
           return (
-            <div className="lg:mb-10 relative flex-none w-full snap-center">
+            <motion.div
+              key={index}
+              onViewportEnter={() => {
+                setProjectIndex(index);
+                console.log(index, "rendered");
+              }}
+              className="lg:mb-10 relative flex-none w-full snap-center"
+            >
               <div className="z-10 flex flex-col gap-[117px] items-center absolute top-4 lg:top-20 left-6 lg:left-20 right-6 lg:right-20">
                 <div className="self-end">
                   <p className="text-white font-Inter font-semibold lg:text-[24px]">
@@ -69,7 +77,7 @@ function ProjectsSection() {
                 src={project.image}
                 alt={project.title}
               />
-            </div>
+            </motion.div>
           );
         })}
       </div>
