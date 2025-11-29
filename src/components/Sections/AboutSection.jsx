@@ -50,7 +50,7 @@ function AboutSection() {
             textAlign={"lg:hidden text-center"}
             color={"text-accent"}
             fontWeight={"font-normal"}
-            textSize={"text-base"}
+            textSize={"text-base md:text-[18px]"}
           >
             {aboutSectionCopy.title}
             {", "}
@@ -90,7 +90,7 @@ function AboutSection() {
           <SatoshiText
             color={"text-accent"}
             fontWeight={"font-normal"}
-            textSize={"text-base lg:text-[18px] lg:leading-[30px]"}
+            textSize={"text-base md:text-[18px] lg:leading-[30px]"}
             textAlign={"max-lg:text-center"}
           >
             {whoWeAreCopy.description}
