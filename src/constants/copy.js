@@ -57,7 +57,7 @@ export const contactCopy = {
   title: "Talk to us",
   contact_links: [
     { type: "Email", value: "abitop@example.com", link: "mailto:" },
-    { type: "Phone", value: "07077755319", link: "tel:" },
+    { type: "Phone", value: "07077755319", link: "tel:07077755319" },
     {
       type: "Office Address",
       value: "B53 Efab mall extension, garki area 11, Abuja, Nigeria",
