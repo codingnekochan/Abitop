@@ -20,6 +20,8 @@ function AboutSection() {
           />
         </div>
         <img
+          width={"51.5%"}
+          height={"390px"}
           src={aboutSectionCopy.image}
           alt="Decorative"
           className="lg:w-[51.5%] h-[390px] lg:h-auto max-lg:rounded-[10px] rounded-r-[10px] object-cover"
@@ -72,6 +74,8 @@ function AboutSection() {
       <div className="bg-white20 h-[1px] mx-6 lg:mx-20" />
       <div className="flex flex-col-reverse lg:flex-row-reverse gap-10 lg:gap-20 max-lg:px-6  pt-10 lg:py-[104px] lg:pl-20">
         <img
+          width={"51.5%"}
+          height={"390px"}
           src={whoWeAreCopy.image}
           alt="Decorative"
           className="lg:w-[51.5%] h-[390px] lg:h-auto max-lg:rounded-[10px] rounded-l-[10px]  object-cover"
