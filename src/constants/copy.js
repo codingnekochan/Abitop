@@ -57,11 +57,11 @@ export const contactCopy = {
   title: "Talk to us",
   contact_links: [
     { type: "Email", value: "abitop@example.com", link: "mailto:" },
-    { type: "Phone", value: "+123 456 7890", link: "tel:" },
+    { type: "Phone", value: "07077755319", link: "tel:" },
     {
       type: "Office Address",
-      value: "123 Architecture St, Design City, Country",
-      link: "",
+      value: "B53 Efab mall extension, garki area 11, Abuja, Nigeria",
+      link: "https://maps.app.goo.gl/fyUxbTYTLWGCmBWd7",
     },
     { type: "Linked In", value: "AbitopLinkedInpage", link: "" },
     { type: "Whatsapp", value: "+1234567890", link: "" },
