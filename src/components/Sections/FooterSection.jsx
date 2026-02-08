@@ -11,7 +11,7 @@ function FooterSection() {
       className="relative pt-10 lg:pt-[104px] pb-6 lg:pb-10 pl-6 lg:pl-20 lg:pr-[120px] bg-brand100"
     >
       <div className="z-50 flex flex-row justify-between items-center">
-        <div className="lg:w-[45%]">
+        <div className="lg:w-[45%] z-50">
           <SectionTitlePill title={contactCopy.title} />
           <div className="max-md:pr-[68px] mt-10 flex flex-col flex-wrap gap-y-10 lg:gap-y-12 h-[218px] lg:h-[246px] max-[375px]:gap-x-12 gap-x-[70px] lg:gap-x-25 xl:gap-x-[200px] justify-between">
             {contactCopy.contact_links.map((link, index) => (
@@ -53,7 +53,7 @@ function FooterSection() {
           {contactCopy.copyright}
         </SatoshiText>
       </div>
-      <div className="absolute z-10 bottom-0 left-0 right-0 h-1/2 w-full  bg-linear-to-t from-white90 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-1/2 w-full  bg-linear-to-t from-white90 to-transparent" />
     </footer>
   );
 }
