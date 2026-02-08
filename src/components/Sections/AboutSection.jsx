@@ -6,6 +6,8 @@ import NavButton from "../Buttons/NavButton";
 import Divider from "../Divider";
 
 function AboutSection() {
+  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <section id="about" className="bg-brand100">
       <div className="flex flex-col-reverse lg:flex-row gap-20 mb-10 lg:mb-6 pt-20 lg:pt-[136px] lg:pb-[104px] max-lg:px-6 lg:pr-20">
@@ -20,7 +22,7 @@ function AboutSection() {
           />
         </div>
         <img
-          width={"51.5%"}
+          width={isTablet ? "100%" : "51.5%"}
           height={"390px"}
           src={aboutSectionCopy.image}
           alt="Decorative"
@@ -74,7 +76,7 @@ function AboutSection() {
       <div className="bg-white20 h-[1px] mx-6 lg:mx-20" />
       <div className="flex flex-col-reverse lg:flex-row-reverse gap-10 lg:gap-20 max-lg:px-6  pt-10 lg:py-[104px] lg:pl-20">
         <img
-          width={"51.5%"}
+          width={isTablet ? "100%" : "51.5%"}
           height={"390px"}
           src={whoWeAreCopy.image}
           alt="Decorative"
