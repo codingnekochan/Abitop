@@ -4,6 +4,7 @@ import SatoshiText from "../Text/SatoshiText";
 import { aboutSectionCopy, whoWeAreCopy } from "../../constants/copy";
 import NavButton from "../Buttons/NavButton";
 import Divider from "../Divider";
+import { useMediaQuery } from "react-responsive";
 
 function AboutSection() {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
