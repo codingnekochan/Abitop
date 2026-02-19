@@ -70,7 +70,7 @@ function HeaderSection() {
                 src={`${heroSectionCopy[page].image}`}
                 alt={`Hero Image ${page + 1}`}
                 className="w-full h-full object-cover object-center"
-                loading={page === 0 ? "eager" : "lazy"}
+                loading={'eager'}
                 decoding="async"
               />
             </picture>

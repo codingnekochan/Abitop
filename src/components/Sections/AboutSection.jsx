@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 function AboutSection() {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+  
 
   return (
     <section id="about" className="bg-brand100">

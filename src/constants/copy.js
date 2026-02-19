@@ -1,6 +1,7 @@
 import {
   aboutImageOne,
   aboutImageTwo,
+  heroImageFive,
   heroImageFour,
   heroImageOne,
   heroImageThree,
@@ -21,6 +22,7 @@ export const heroSectionCopy = [
   { id: "02", title: "Sunset Villa", year: "2025", image: heroImageTwo },
   { id: "03", title: "Oceanview Condo", year: "2025", image: heroImageThree },
   { id: "04", title: "Mountain Retreat", year: "2025", image: heroImageFour },
+  { id: "05", title: "Urban Oasis", year: "2025", image: heroImageFive },
 ];
 export const aboutSectionCopy = {
   title: "At Abitop",
